@@ -1,0 +1,17 @@
+<div class="container item-list">
+  <article
+    *ngFor="let card of cards"
+    class="item item-blink"
+    tabindex="{{ card.tabindex }}"
+  >
+    <img
+      class="item-img"
+      src="{{ card.image }}"
+      alt="{{ card.imageDescription }}"
+    />
+    <div class="item-body">
+      <h2 class="item-title">{{ card.title | uppercase }}</h2>
+      <div class="item-text">{{ card.text }}</div>
+    </div>
+  </article>
+</div>
