@@ -1,0 +1,120 @@
+$gradientGrey: linear-gradient(to right, rgba(34, 34, 34, 0.9) 50%, #111);
+$gradientHover: linear-gradient(to right, darkviolet, darkblue);
+
+
+.gradient-grey {
+    background-image: $gradientGrey;
+}
+
+.header {
+    position: relative;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 990;
+    top: 4px;
+    left: 14px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    height: 4px;
+    width: 32px;
+    background-color: #CCC;
+    margin: 6px 0;
+    display: block;
+}
+
+/**
+ * NAVBAR
+ */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-item {
+    padding: 10px;
+    text-align: center;
+    line-height: inherit;
+}
+
+.navbar-item:hover {
+    color: #fff;
+    background-image: $gradientHover;
+}
+
+.navbar-item-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: inherit;
+}
+
+.navbar-item-brand:hover {
+    background-image: none;
+    background-color: transparent;
+}
+
+.navbar.toggle>.navbar-item:not(.navbar-item-brand) {
+    display: none;
+}
+
+/**
+ * DESKTOP
+ */
+ @media screen and (min-width: 1024px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 200;
+    }
+
+    .hamburger {
+        visibility: collapse;
+    }
+
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .navbar-item {
+        padding: 10px;
+        border-radius: 5px;
+        color: #CCC;
+    }
+
+    .navbar-item:hover {
+        background-image: none;
+        background-color: #323232;
+    }
+
+    .navbar-item:first-child {
+        margin-right: auto;
+    }
+
+    .navbar-item-brand {
+        color: #fff;
+    }
+
+    .navbar-item-brand:hover {
+        background-image: none;
+        background-color: transparent;
+    }
+
+    .navbar.toggle>.navbar-item:not(.navbar-item-brand) {
+        display: initial;
+    }
+ }
