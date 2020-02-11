@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './home/components/home/home.component';
 import { CardComponent } from './home/components/card/card.component';
+import { DarkHeresyComponent } from './views/components/dark-heresy/dark-heresy.component';
+import { BlackCrusadeComponent } from './views/components/black-crusade/black-crusade.component';
+import { TheWitcherComponent } from './views/components/the-witcher/the-witcher.component';
+import { ScenarioComponent } from './views/components/scenario/scenario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    DarkHeresyComponent,
+    BlackCrusadeComponent,
+    TheWitcherComponent,
+    ScenarioComponent
   ],
   imports: [
     BrowserModule,

@@ -6,10 +6,10 @@
   </div>
   <div class="container">
     <nav class="navbar toggle">
-      <a class="navbar-item navbar-item-brand" href="/">JDR.INiT</a>
-      <a class="navbar-item" href="/">Dark Heresy</a>
-      <a class="navbar-item" href="/">Black Crusade</a>
-      <a class="navbar-item" href="/">The Witcher</a>
+      <a class="navbar-item navbar-item-brand" [routerLink]="['']" routerLinkActive="active">JDR.INiT</a>
+      <a class="navbar-item" [routerLink]="['/dark_heresy']" routerLinkActive="active">Dark Heresy</a>
+      <a class="navbar-item" [routerLink]="['/black_crusade']" routerLinkActive="active">Black Crusade</a>
+      <a class="navbar-item" [routerLink]="['/the_witcher']" routerLinkActive="active">The Witcher</a>
     </nav>
   </div>
 </header>
